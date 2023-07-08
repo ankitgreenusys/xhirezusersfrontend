@@ -14,10 +14,12 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/jobs">
-          <Route path="" element={<Home />} />
-          <Route path="list" element={<JobsLists />} />
-          <Route path=":jobId/apply" element={<h1>Job Details</h1>} />
+        <Route path="/users">
+          <Route path="jobs">
+            <Route path="" element={<Home />} />
+            <Route path="list" element={<JobsLists />} />
+            <Route path=":jobId/apply" element={<h1>Job Details</h1>} />
+          </Route>
         </Route>
         <Route path="/services" element={<h1>Services</h1>} />
         <Route path="/contact" element={<h1>Contact</h1>} />
