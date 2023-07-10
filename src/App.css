@@ -12,14 +12,14 @@
   --color-border: #333333;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #1c1e21;
     --color-text: #ffffff;
     --color-text-light: #121315;
     --color-dark: #f9fbfc;
   }
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -55,11 +55,12 @@ select:focus-visible,
 textarea:focus-visible {
   outline: none;
   border: none;
-  box-shadow: none;
+  box-shadow: none !important;
 } */
 
 .marginframe {
   margin: 40px 20px;
+  min-height: 44vh;
 }
 
 .mybtn {

@@ -1,12 +1,12 @@
 import React from "react";
 import "./Styles.css";
-import { Link } from "react-router-dom";
 
-import Companylogo from "../../assets/images/companylogo.jpg";
+import { Link } from "react-router-dom";
+import Companylogo from "../../../assets/images/companylogo.jpg";
 
 const Index = () => {
   return (
-    <div className="homesec marginframe">
+    <div className="jobshomesec marginframe">
       <div className="d-flex justify-content-center flex-column align-items-center">
         <div className="hoheading">
           <h1 className="txt-blue">Find your dream job</h1>
@@ -33,80 +33,53 @@ const Index = () => {
             />
           </div>
           <div className="d-flex justify-content-center mt-3">
-            <Link to="/jobs/list" className="mybtn btn-blue px-4">
+            <Link to="list" className="mybtn btn-blue px-4">
               <i class="fa-solid fa-magnifying-glass"></i> Search
             </Link>
           </div>
         </div>
         <div className="commonjob">
-          <Link
-            to="/jobs/list?search=ui"
-            className="atextbox atextboxborder m-2"
-          >
+          <Link to="list?search=ui" className="atextbox atextboxborder m-2">
             <i class="fa-solid fa-bullhorn me-1"></i>
             <span>Marketing</span>
             <i class="fa-solid fa-chevron-right ms-2"></i>
           </Link>
-          <Link
-            to="/jobs/list?search=ui"
-            className="atextbox atextboxborder m-2"
-          >
+          <Link to="list?search=ui" className="atextbox atextboxborder m-2">
             <i class="fa-solid fa-bullhorn me-1"></i>
             <span>Marketing</span>
             <i class="fa-solid fa-chevron-right ms-2"></i>
           </Link>
-          <Link
-            to="/jobs/list?search=ui"
-            className="atextbox atextboxborder m-2"
-          >
+          <Link to="list?search=ui" className="atextbox atextboxborder m-2">
             <i class="fa-solid fa-bullhorn me-1"></i>
             <span>Marketing</span>
             <i class="fa-solid fa-chevron-right ms-2"></i>
           </Link>
-          <Link
-            to="/jobs/list?search=ui"
-            className="atextbox atextboxborder m-2"
-          >
+          <Link to="list?search=ui" className="atextbox atextboxborder m-2">
             <i class="fa-solid fa-bullhorn me-1"></i>
             <span>Marketing</span>
             <i class="fa-solid fa-chevron-right ms-2"></i>
           </Link>
-          <Link
-            to="/jobs/list?search=ui"
-            className="atextbox atextboxborder m-2"
-          >
+          <Link to="list?search=ui" className="atextbox atextboxborder m-2">
             <i class="fa-solid fa-bullhorn me-1"></i>
             <span>Marketing</span>
             <i class="fa-solid fa-chevron-right ms-2"></i>
           </Link>
-          <Link
-            to="/jobs/list?search=ui"
-            className="atextbox atextboxborder m-2"
-          >
+          <Link to="list?search=ui" className="atextbox atextboxborder m-2">
             <i class="fa-solid fa-bullhorn me-1"></i>
             <span>Marketing</span>
             <i class="fa-solid fa-chevron-right ms-2"></i>
           </Link>
-          <Link
-            to="/jobs/list?search=ui"
-            className="atextbox atextboxborder m-2"
-          >
+          <Link to="list?search=ui" className="atextbox atextboxborder m-2">
             <i class="fa-solid fa-bullhorn me-1"></i>
             <span>Marketing</span>
             <i class="fa-solid fa-chevron-right ms-2"></i>
           </Link>
-          <Link
-            to="/jobs/list?search=ui"
-            className="atextbox atextboxborder m-2"
-          >
+          <Link to="list?search=ui" className="atextbox atextboxborder m-2">
             <i class="fa-solid fa-bullhorn me-1"></i>
             <span>Marketing</span>
             <i class="fa-solid fa-chevron-right ms-2"></i>
           </Link>
-          <Link
-            to="/jobs/list?search=ui"
-            className="atextbox atextboxborder m-2"
-          >
+          <Link to="list?search=ui" className="atextbox atextboxborder m-2">
             <i class="fa-solid fa-bullhorn me-1"></i>
             <span>Marketing</span>
             <i class="fa-solid fa-chevron-right ms-2"></i>

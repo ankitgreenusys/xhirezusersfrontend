@@ -25,7 +25,7 @@ const Index = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="navbar-nav navlinks">
-          <NavLink to="/jobs">
+          <NavLink to="users/jobs">
             <i className="fa-solid fa-briefcase"></i> Dashboard
           </NavLink>
           <NavLink to="/employee">

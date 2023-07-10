@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const JobDesc = () => {
   return (
@@ -23,7 +24,9 @@ const JobDesc = () => {
           </span>
         </div>
         <div className="mt-3">
-          <button className="mybtn btn-blue">Apply</button>
+          <Link to="/users/jobs/1/apply" className="mybtn btn-blue">
+            Apply
+          </Link>
           <span className="ms-4">
             <i class="fa-regular fa-bookmark"></i>
           </span>
