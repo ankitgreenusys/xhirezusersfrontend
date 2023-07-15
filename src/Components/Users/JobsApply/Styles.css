@@ -17,7 +17,7 @@
 .jobsapplysec .heading {
   font-size: 30px;
   font-weight: 600;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .jobsapplysec .jobques .resumesec .fileion {
@@ -115,7 +115,8 @@
   border-radius: 20px;
 }
 
-.jobsapplysec .jobdescsec .title .heading {
+.jobsapplysec .jobdescsec .title h5 {
+  margin-top: 15px;
   font-size: 20px;
   font-weight: 600;
 }

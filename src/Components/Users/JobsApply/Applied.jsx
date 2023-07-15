@@ -12,7 +12,7 @@ const Applied = () => {
           <i className="fas fa-check-circle txt-green"></i>
         </div>
         <div className="browsejobs">
-          <Link to="/jobs" className="message txt-blue">
+          <Link to="/users/jobs" className="message txt-blue">
             <h5>Browse more related jobs</h5>
           </Link>
         </div>

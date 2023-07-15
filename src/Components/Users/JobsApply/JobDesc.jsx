@@ -7,7 +7,7 @@ const JobDesc = () => {
     <div className="jobdescsec sticky-top">
       <div className="atextbox atextboxborder fix">
         <div className="title d-flex justify-content-between align-items-center">
-          <h5 className="heading">UI/UX Designer</h5>
+          <h5 className="">UI/UX Designer</h5>
           <span className="ms-4">
             <i class="fa-regular fa-bookmark bookmarkicon"></i>
           </span>

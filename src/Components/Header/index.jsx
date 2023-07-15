@@ -28,11 +28,11 @@ const Index = () => {
           <NavLink to="users/jobs">
             <i className="fa-solid fa-briefcase"></i> Dashboard
           </NavLink>
-          <NavLink to="/employee">
+          <NavLink to="users/company">
             <i className="fa-solid fa-city"></i> Companies
           </NavLink>
-          <NavLink to="/employer">
-          <i class="fa-regular fa-bookmark"></i> Saved Jobs
+          <NavLink to="users/my">
+            <i class="fa-regular fa-bookmark"></i> Saved Jobs
           </NavLink>
           <NavLink to="/sponsored">
             <i className="fa-solid fa-message"></i> Messages

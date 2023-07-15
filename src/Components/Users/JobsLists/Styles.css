@@ -31,9 +31,9 @@
 
 .jobslist .lists .listhead .sortdel select,
 .jobslist .lists .listhead .sortdel select:focus-visible {
-  background-color: transparent;
-  border: none;
-  outline: none;
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
 }
 
 .jobslist .lists .listbody .namesec .title {

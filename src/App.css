@@ -18,6 +18,7 @@
     --color-text: #ffffff;
     --color-text-light: #121315;
     --color-dark: #f9fbfc;
+    --color-border: #928e8e;
   }
 } */
 
@@ -42,21 +43,25 @@ a {
   color: var(--color-text);
 }
 
-input {
+input,
+select,
+textarea {
+  border-radius: 15px !important;
   outline: none;
-  border: none;
-  /* background-color: transparent !important; */
-  color: var(--color-text);
+  /* border: none; */
+  background-color: transparent !important;
+  color: var(--color-text) !important;
+  border: 1px solid var(--color-border) !important;
 }
 
-/* input:focus-visible,
+input:focus-visible,
 input:focus,
 select:focus-visible,
 textarea:focus-visible {
   outline: none;
   border: none;
   box-shadow: none !important;
-} */
+}
 
 .marginframe {
   margin: 40px 20px;
@@ -73,56 +78,79 @@ textarea:focus-visible {
 }
 
 .btn-blue {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary) !important;
 }
 
 .btn-red {
-  background-color: var(--color-danger);
+  background-color: var(--color-danger) !important;
 }
 
 .btn-green {
-  background-color: var(--color-success);
+  background-color: var(--color-success) !important;
 }
 
 .btn-black {
-  background-color: var(--color-dark);
+  background-color: var(--color-dark) !important;
 }
 
 .btn-trans {
-  background-color: transparent;
-  color: var(--color-text);
+  background-color: transparent !important;
+  color: var(--color-text) !important;
 }
 
 .btn-muted {
-  background-color: var(--color-muted);
+  background-color: var(--color-muted) !important;
 }
 
 .mybtn:hover {
   transform: scale(1.05);
 }
 
+.mylabel {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-text-light);
+}
+
+.label-blue {
+  background-color: var(--color-primary) !important;
+}
+
+.label-red {
+  background-color: var(--color-danger) !important;
+}
+
+.label-green {
+  background-color: var(--color-success) !important;
+}
+
 .txt-blue {
-  color: var(--color-primary);
+  color: var(--color-primary) !important;
 }
 
 .txt-red {
-  color: var(--color-danger);
+  color: var(--color-danger) !important;
 }
 
 .txt-green {
-  color: var(--color-success);
+  color: var(--color-success) !important;
 }
 
 .txt-black {
-  color: var(--color-dark);
+  color: var(--color-dark) !important;
 }
 
 .txt-muted {
-  color: var(--color-muted);
+  color: var(--color-muted) !important;
 }
 
 .txt-light-muted {
-  color: var(--color-muted-light);
+  color: var(--color-muted-light) !important;
 }
 
 .cursor-pointer {

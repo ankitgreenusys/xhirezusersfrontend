@@ -1,37 +1,20 @@
 import React from "react";
 
-const Lists = () => {
+const AppliedJobs = () => {
   const dta = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
   return (
     <div className="lists mt-3">
-      <div className="d-flex justify-content-between listhead">
-        <div className="resdel">
-          <span>1-20 of 200</span>
-          <span className="txt-blue ms-2">ui ux designer</span>
-        </div>
-        <div className="sortdel">
-          <label htmlFor="sortby">sort by</label>
-          <select className="txt-blue" name="sortby" id="sortby">
-            <option  value="relevance">relevance</option>
-            <option value="date">date</option>
-          </select>
-        </div>
-      </div>
-
       {dta.map((item, idx) => (
         <div className="listbody my-3 " key={idx}>
-          <div
-            className={
-              "atextbox py-3 listitem cursor-pointer " +
-              (idx % 2 ? "atextboxborder" : "")
-            }
-          >
+          <div className="atextbox py-3 listitem cursor-pointer ">
             <div className="namesec">
               <div className="d-flex justify-content-between">
-                <div className="title">UI Designer</div>
-                <div className="">
-                  <i class="fa-regular fa-bookmark"></i>
+                <div className="title d-flex">
+                  <span>UI Designer</span>
+                  {idx % 3 === 0 && <div className="mylabel label-blue">Applied</div>}
+                  {idx % 3 === 1 && <div className="mylabel label-green">Application viewed</div>}
+                  {idx % 3 === 2 && <div className="mylabel label-red">Not selected by employer</div>}
                 </div>
               </div>
             </div>
@@ -67,4 +50,4 @@ const Lists = () => {
   );
 };
 
-export default Lists;
+export default AppliedJobs;
