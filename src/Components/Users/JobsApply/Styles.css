@@ -62,12 +62,12 @@
   font-weight: 400;
 }
 
-.jobsapplysec .jobques .qnasec .ques input[type="text"],
+/* .jobsapplysec .jobques .qnasec .ques input[type="text"],
 .jobsapplysec .jobques .qnasec .ques textarea,
 .jobsapplysec .jobques .qnasec .ques input[type="radio"]:not(:checked),
 .jobsapplysec .jobques .qnasec .ques select {
   border: 1px solid var(--color-text);
-}
+} */
 
 .jobsapplysec .reviewdata {
   margin-top: 20px;

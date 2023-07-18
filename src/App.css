@@ -12,7 +12,7 @@
   --color-border: #333333;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #1c1e21;
     --color-text: #ffffff;
@@ -20,7 +20,7 @@
     --color-dark: #f9fbfc;
     --color-border: #928e8e;
   }
-} */
+}
 
 * {
   box-sizing: border-box;
@@ -52,6 +52,22 @@ textarea {
   background-color: transparent !important;
   color: var(--color-text) !important;
   border: 1px solid var(--color-border) !important;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--color-primary) !important;
+  border: 1px solid var(--color-primary) !important;
+}
+
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: var(--color-muted) !important;
+}
+
+select option {
+  color: var(--color-text) !important;
+  background-color: var(--color-text-light) !important;
 }
 
 input:focus-visible,
@@ -113,7 +129,6 @@ textarea:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-
   color: var(--color-text-light);
 }
 
@@ -211,6 +226,30 @@ textarea:focus-visible {
 
 .atextboxborder {
   border: 2px solid var(--color-border);
+}
+
+.atextbox .divider {
+  border: 1px solid var(--color-muted-light);
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.overflowscroll {
+  overflow-y: auto;
+}
+.overflowscroll::-webkit-scrollbar {
+  width: 3px;
+}
+/* Track */
+.overflowscroll::-webkit-scrollbar-track {
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* Handle */
+.overflowscroll::-webkit-scrollbar-thumb {
+  background: var(--color-muted-light);
+  border-radius: 20px;
 }
 
 .commntable table {

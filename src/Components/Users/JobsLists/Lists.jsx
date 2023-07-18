@@ -23,8 +23,8 @@ const Lists = () => {
         <div className="listbody my-3 " key={idx}>
           <div
             className={
-              "atextbox py-3 listitem cursor-pointer " +
-              (idx % 2 ? "atextboxborder" : "")
+              "atextbox py-3 listitem " +
+              (idx % 2 ? "atextboxborder" : "cursor-pointer")
             }
           >
             <div className="namesec">

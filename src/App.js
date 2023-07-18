@@ -14,6 +14,11 @@ import JobsMy from "./Components/Users/MyJobs";
 import CompanyHome from "./Components/Users/CompanyHome";
 import CompanyPage from "./Components/Users/CompanyPage";
 
+import Messages from "./Components/Users/Messages";
+
+import Profile from "./Components/Users/Profile";
+import ProfilePlans from "./Components/Users/ProfilePlans";
+
 function App() {
   return (
     <>
@@ -31,8 +36,15 @@ function App() {
             <Route path="" element={<CompanyHome />} />
             <Route path=":companyId" element={<CompanyPage />} />
           </Route>
-          <Route path="my">
+          <Route path="myjobs">
             <Route path="" element={<JobsMy />} />
+          </Route>
+          <Route path="messages">
+            <Route path="" element={<Messages />} />
+          </Route>
+          <Route path="profile">
+            <Route path="" element={<Profile />} />
+            <Route path="plans" element={<ProfilePlans />} />
           </Route>
         </Route>
         <Route path="/services" element={<h1>Services</h1>} />

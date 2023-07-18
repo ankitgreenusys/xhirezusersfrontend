@@ -65,28 +65,11 @@
 .jobslist .jobdescsec {
   margin-top: 120px;
   margin-bottom: 20px;
-  top:20px
+  top: 20px;
 }
 
 .jobslist .jobdescsec .fix {
   height: 95vh;
-  overflow-y: auto;
-}
-.jobslist .jobdescsec .fix::-webkit-scrollbar {
-  width: 3px;
-}
-
-/* Track */
-.jobslist .jobdescsec .fix::-webkit-scrollbar-track {
-  border-radius: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/* Handle */
-.jobslist .jobdescsec .fix::-webkit-scrollbar-thumb {
-  background: var(--color-muted-light);
-  border-radius: 20px;
 }
 
 .jobslist .jobdescsec .title {

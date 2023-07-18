@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const JobDesc = () => {
   return (
     <div className="jobdescsec sticky-top">
-      <div className="atextbox atextboxborder fix">
+      <div className="atextbox atextboxborder fix overflowscroll">
         <div className="title">UI Designer</div>
         <div className="smalldet mt-2 txt-muted">
           <span class="">Microsoft Pvt. Ltd.</span>
