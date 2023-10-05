@@ -1,59 +1,53 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import "./Styles.css";
 
 import Headerlogo from "../../assets/images/headerlogo.png";
 
 const Index = () => {
   return (
-    <nav className="navbar navbar-expand-lg header px-4 py-3">
-      <div className="container-fluid">
-        <div className="">
-          <Link className="navbar-brand" to="/">
-            <img src={Headerlogo} className="headerlogo" alt="" />
-          </Link>
-        </div>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="navbar-nav navlinks">
-          <NavLink to="users/jobs">
-            <i className="fa-solid fa-briefcase"></i> Dashboard
-          </NavLink>
-          <NavLink to="users/company">
-            <i className="fa-solid fa-city"></i> Companies
-          </NavLink>
-          <NavLink to="users/myjobs">
-            <i class="fa-regular fa-bookmark"></i> Saved Jobs
-          </NavLink>
-          <NavLink to="/users/messages">
-            <i className="fa-solid fa-message"></i> Messages
-          </NavLink>
-        </div>
-        <div className="navbar-nav d-flex align-items-center account">
-          <div className="acc-notif">
-            <i className="fa-solid fa-bell icon d-flex justify-content-around align-items-center"></i>
+    <>
+      <nav className="navbar navbar-expand-lg headermain px-4 py-3">
+        <div className="container-fluid">
+          <div className="">
+            <Link className="navbar-brand" to="/">
+              <img src={Headerlogo} className="headerlogo" alt="" />
+            </Link>
           </div>
-          <Link to="/users/profile">
-            <div className="nav-item d-flex">
-              <i className="fa-solid fa-circle-user icon d-flex justify-content-around align-items-center"></i>
-              <div className="acc-details">
-                <p className="txt-blue my-0 mx-1 name">Mohit Kumar</p>
-                <p className="txt-muted my-0 mx-1 email">mohit@gmail.com</p>
-              </div>
+          <div className="navbar-nav d-flex align-items-center account">
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <button
+                    class="btn dropdownbtn dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Sign In
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <Link class="dropdown-item" href="/">
+                        Employer
+                      </Link>
+                    </li>
+                    <li>
+                      <Link class="dropdown-item" href="/">
+                        Candidate
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-          </Link>
+            <Link to="/createacc" className="">
+              Sign Up
+            </Link>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+      <Outlet />
+    </>
   );
 };
 

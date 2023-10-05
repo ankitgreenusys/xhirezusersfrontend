@@ -5,6 +5,9 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 
+import CreateAccount from "./Components/CreateAccount";
+
+import UserHeader from "./Components/Users/Header";
 import Home from "./Components/Users/JobsHome";
 import JobsLists from "./Components/Users/JobsLists";
 import JobsApply from "./Components/Users/JobsApply";
@@ -22,10 +25,12 @@ import ProfilePlans from "./Components/Users/ProfilePlans";
 function App() {
   return (
     <>
-      <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/users">
+        <Route path="/" element={<Header />}>
+          <Route path="" element={<Home />} />
+          <Route path="createacc" element={<CreateAccount />} />
+        </Route>
+        <Route path="/users" element={<UserHeader />}>
           <Route path="jobs">
             <Route path="" element={<Home />} />
             <Route path="list" element={<JobsLists />} />
